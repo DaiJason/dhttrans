@@ -8,12 +8,12 @@
 class Uncopyable
 {
 protected:
-	Uncopyable(){}
+    Uncopyable() {}
 
-	~Uncopyable(){}
+    ~Uncopyable() {}
 private:
-	Uncopyable(const Uncopyable&);				//防止拷贝构造
+    Uncopyable(const Uncopyable&);				//防止拷贝构造
 
-	Uncopyable& operator=(const Uncopyable &);	//防止赋值不实现
+    Uncopyable& operator=(const Uncopyable &);	//防止赋值不实现
 };
 
